@@ -118,8 +118,51 @@ var data = [1,12,2,56,8,64,46,7,465,8,4,5,54,8,3,5,456,4,8];
 */
 
 
+// var data = [1,12,2,56,8,64,46,7,465,8,4,5,54,8,3,5,456,4,8];
+// var dataArr =[];
+
+// for (let i = 0; i < data.length; i++) {
+//     if(data[i]%2 !=0){
+//         dataArr.push(data[i]);
+//         console.log(dataArr[i]);
+//     }
+// }
+
+
+// var fullName = prompt('Enter Full Name: ');
+
+// fullName = fullName.toLowerCase();
+
+// if(fullName =="mohamed"){
+//     console.log('Hi Mohamed');
+// }else{
+//     console.log('Sorry');
+// }
+
+
+// ============ Session 2 ==================
+// DRY
+
+// function Re-use Code
+
+var fullName = prompt('First Name : '); //Ali
 
 
 
+function checkFullName(name){
+    var fullARR = [];
+    var newName = name.toLowerCase();
 
+    for (let i = 0; i < newName.length; i++) {
+        if(i == 0){
+            var x = newName[i].toUpperCase()
+            fullARR.push(x);
+        }else{
+            fullARR.push(newName[i]);
+        }
+    }
+    
+    return fullARR.join('');
+} 
 
+alert(checkFullName(fullName))
