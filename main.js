@@ -145,24 +145,35 @@ var data = [1,12,2,56,8,64,46,7,465,8,4,5,54,8,3,5,456,4,8];
 
 // function Re-use Code
 
-var fullName = prompt('First Name : '); //Ali
+// var fullName = prompt('First Name : '); //Ali
 
 
 
-function checkFullName(name){
-    var fullARR = [];
-    var newName = name.toLowerCase();
+// function checkFullName(name){
+//     var fullARR = [];
+//     var newName = name.toLowerCase();
 
-    for (let i = 0; i < newName.length; i++) {
-        if(i == 0){
-            var x = newName[i].toUpperCase()
-            fullARR.push(x);
-        }else{
-            fullARR.push(newName[i]);
-        }
-    }
-    
-    return fullARR.join('');
-} 
+//     for (let i = 0; i < newName.length; i++) {
+//         if(i == 0){
+//             var x = newName[i].toUpperCase()
+//             fullARR.push(x);
+//         }else{
+//             fullARR.push(newName[i]);
+//         }
+//     }
 
-alert(checkFullName(fullName))
+//     return fullARR.join('');
+// } 
+
+// alert(checkFullName(fullName))
+
+
+
+// ============= Task Session2 ================
+
+// عاوز اطلب من اليوزر الاسم  وبعدين العمر  وبعدين الخبره وبعدين تخصصه
+// واطبعهم بالشكل ده 
+// Name : Ali
+// Age :22
+// Experience : 2
+// Specialization : Frone-end
